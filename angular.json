@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lp-pgbrasil"
+    }
+  },
+  "defaultProject": "lp-pgbrasil",
+  "cli": {
+    "analytics": "14f0dae8-b62f-413a-a5aa-584aeefa1721"
+  }
 }
