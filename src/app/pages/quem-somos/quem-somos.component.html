@@ -1,5 +1,5 @@
 <div id="intro" class="container">
-  <h1>Quem Somos</h1>
+  <h1>QUEM SOMOS</h1>
   <p>
     A PGF Brasil foi criada com o propósito de contribuir com a Matriz
     Energética Brasileira de forma sustentável, através da construção de Usinas
@@ -7,9 +7,12 @@
     desenvolvimento do meio ambiente.
   </p>
 </div>
-<div id="img-container" class="container-fluid">
-  <img id="img-parallax" class="img-fluid" src="assets/images/paineis.png" />
-</div>
+<div
+  id="img-container"
+  class="container-fluid"
+  parallax
+  [config]="{ initialValue: -100, ratio: 0.7 }"
+></div>
 <div class="container">
   <p>
     Somos uma plataforma que promove o desenvolvimento sustentável para inovar
@@ -24,29 +27,51 @@
     Essa é a transformação que queremos para os próximos anos. Contribuir para
     um Futuro melhor, com menos poluição e degradação do meio ambiente.
   </p>
-  <h3>
-    Missão
-  </h3>
-  <p>
-    Contribuir na renovação e atualização da Matriz Energética Brasileira,
-    através de energia renovável, oferecendo benefícios aos investidores, e por
-    sua vez aos consumidores, visando sempre à conservação do meio ambiente.
-  </p>
-  <h3>
-    Visão
-  </h3>
+  <div class="row">
+    <div class="col">
+      <img
+        class="img-fluid rounded"
+        src="../../../assets/images/montagem-painel.png"
+      />
+    </div>
+    <div class="col conteudo">
+      <h3>
+        MISSÃO
+      </h3>
+      <p>
+        Contribuir na renovação e atualização da Matriz Energética Brasileira,
+        através de energia renovável, oferecendo benefícios aos investidores, e
+        por sua vez aos consumidores, visando sempre à conservação do meio
+        ambiente.
+      </p>
+    </div>
+  </div>
 
-  <p>
-    Ser referência em montagem de plantas de geração fotovoltaica, tendo como
-    referência a atualização dos negócios do setor, bem como no desenvolvimento
-    de novas oportunidades, que transformarão as maneiras de gerar, armazenar e
-    consumir energia no Brasil.
-  </p>
+  <div class="row">
+    <div class="col conteudo">
+      <h3>
+        Visão
+      </h3>
 
-  <h3>
+      <p>
+        Ser referência em montagem de plantas de geração fotovoltaica, tendo
+        como referência a atualização dos negócios do setor, bem como no
+        desenvolvimento de novas oportunidades, que transformarão as maneiras de
+        gerar, armazenar e consumir energia no Brasil.
+      </p>
+    </div>
+    <div class="col">
+      <img
+        class="img-fluid rounded"
+        src="../../../assets/images/paineis-paisagem.png"
+      />
+    </div>
+  </div>
+
+  <h3 id="valores">
     Valores
   </h3>
-  <ul>
+  <ul class="gradient-list">
     <li>
       Responsabilidade Ambiental;
     </li>

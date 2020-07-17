@@ -1,16 +1,108 @@
 #intro {
   margin-top: 4rem;
-  h1 {
-    text-align: center;
+}
+
+.container {
+  h3 {
+    margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .col {
+      img {
+        box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+          0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+      }
+    }
+
+    .col.conteudo {
+      h3 {
+        padding-bottom: 30px;
+        border-bottom: solid #8bc34a;
+      }
+    }
+  }
+
+  h3 {
+    padding-bottom: 30px;
+    border-bottom: solid #8bc34a;
+    &#valores {
+      max-width: 80%;
+    }
+  }
+
+  ul.gradient-list {
+    margin-left: 5rem;
+    list-style: none;
+    margin: 1.75rem 5rem;
+    padding-left: 1rem;
+    > li {
+      background: white;
+      border-radius: 0 0.5rem 0.5rem 0.5rem;
+      margin-top: 1rem;
+      min-height: 3rem;
+      padding-left: 4rem;
+      position: relative;
+      &::before,
+      &::after {
+        background: linear-gradient(135deg, #8bc34a 0%, #1a8cb9 100%);
+        border-radius: 1rem 1rem 0 1rem;
+        content: "";
+        height: 3rem;
+        left: -1rem;
+        overflow: hidden;
+        position: absolute;
+        top: -1rem;
+        width: 3rem;
+      }
+    }
   }
 }
 
-#img-parallax {
-  max-height: 100%;
-  width: 100%;
+@mixin lessLeft {
+  margin-left: 1rem !important;
+  padding-left: 0;
+  left: 0;
 }
 
 #img-container {
   padding: 0;
+  height: 350px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  background-image: url("../../../assets/images/paineis.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #intro {
+    margin-top: 2rem;
+  }
+
+  #img-container {
+    height: 150px;
+    background-size: 300% 500%;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  ul.gradient-list {
+    @include lessLeft();
+    li {
+      @include lessLeft();
+      font-size: medium;
+    }
+  }
 }

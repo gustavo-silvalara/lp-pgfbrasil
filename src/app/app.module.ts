@@ -10,6 +10,9 @@ import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { RowComponent } from './components/row/row.component';
 import { QuemSomosComponent } from './pages/quem-somos/quem-somos.component';
+import { ParallaxModule } from 'ngx-parallax';
+import { FooterComponent } from './components/footer/footer.component';
+import { UsinasPgfComponent } from './pages/usinas-pgf/usinas-pgf.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,8 @@ import { QuemSomosComponent } from './pages/quem-somos/quem-somos.component';
     TabsComponent,
     RowComponent,
     QuemSomosComponent,
+    FooterComponent,
+    UsinasPgfComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,7 @@ import { QuemSomosComponent } from './pages/quem-somos/quem-somos.component';
     BrowserAnimationsModule,
     MatProgressBarModule,
     MatTabsModule,
+    ParallaxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
